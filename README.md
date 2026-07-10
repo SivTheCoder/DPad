@@ -6,6 +6,25 @@ button pad that triggers clicks and scroll actions over serial.
 
 ---
 
+## Screenshots
+
+### Hardware
+
+<p>
+  <img src="assets/screenshots/1.jpeg" alt="DPad hardware — photo 1" width="32%" />
+  <img src="assets/screenshots/2.jpeg" alt="DPad hardware — photo 2" width="32%" />
+  <img src="assets/screenshots/3.jpge" alt="DPad hardware — photo 3" width="32%" />
+</p>
+
+### Software
+
+<p>
+  <img src="assets/screenshots/4.png" alt="DPad app screenshot 1" width="48%" />
+  <img src="assets/screenshots/6.png" alt="DPad app screenshot 2" width="48%" />
+</p>
+
+---
+
 ## Quick Start — Download and Run (no Python required)
 
 1. Go to the repo: https://github.com/SivTheCoder/dpad
@@ -66,6 +85,8 @@ dpad/
 ├── profile_manager.py           # Profile handling
 ├── serial_handler.py             # ESP32 serial connection + message parsing
 ├── logo.ico                       # App icon
+├── assets/
+│   └── screenshots/                 # README images (1–3 hardware, 4 & 6 software)
 └── build/                          # PyInstaller build cache (not needed to run)
 ```
 
