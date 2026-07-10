@@ -1,26 +1,27 @@
 # <img src="logo.png" alt="DPad logo" width="40" height="40" valign="middle" /> DPad
 
-A minimalist, Stream-Deck-style desktop macro controller with a light/dark
-theme picker, built-in test actions, and support for a physical ESP32
-button pad that triggers clicks and scroll actions over serial.
-
----
-
-## Screenshots
-
-### Hardware
-
-<p>
-  <img src="assets/screenshots/1.jpeg" alt="DPad hardware — photo 1" width="32%" />
-  <img src="assets/screenshots/2.jpeg" alt="DPad hardware — photo 2" width="32%" />
-  <img src="assets/screenshots/3.jpeg" alt="DPad hardware — photo 3" width="32%" />
-</p>
-
-### Software
-
-<p>
-  <img src="assets/screenshots/4.png" alt="DPad app screenshot 1" width="48%" />
-</p>
+Built for my dad.
+ 
+He records videos regularly, and I kept noticing the same problem: every
+time he needed to start or stop recording, switch scenes, mute the mic,
+trigger a shortcut, or control his teleprompter, he had to stop and reach
+for the keyboard — interrupting his flow every single time.
+ 
+So I put my bigger projects on hold — a Raspberry Pi/ESP32-S3 desktop
+assistant and an F-22 RC aircraft — to build him something much simpler: a
+custom programmable macro pad. The goal was never to build the most
+advanced piece of hardware. It was to remove friction from something he
+does every day (within a short span of time as he hates me "wasting" time on these lil silly projects for him lmao).
+ 
+**DPad** is the software and hardware side of that: a desktop app for configuring
+macros across with a physical macro pad customizable and desgined to be used as a foot pedal. Software includes a GUI for assigning shortcuts without touching firmware, and
+automatic detection so the hardware just connects and works — no setup
+ritual required. Also some "dad themed" themes just to get the vibe going :D
+ 
+Sometimes the most impactful projects aren't the biggest ones. This one
+taught me that paying attention to a small, everyday frustration — and
+just fixing it — can matter more than building something bigger or more
+complex.
 
 ---
 
@@ -208,6 +209,25 @@ wired button will then trigger the same click/scroll action as the
 matching **Test Actions** button in the app.
 
 ---
+
+## Screenshots
+
+### Hardware
+
+<p>
+  <img src="assets/screenshots/1.jpeg" alt="DPad hardware — photo 1" width="32%" />
+  <img src="assets/screenshots/2.jpeg" alt="DPad hardware — photo 2" width="32%" />
+  <img src="assets/screenshots/3.jpeg" alt="DPad hardware — photo 3" width="32%" />
+</p>
+
+### Software
+
+<p>
+  <img src="assets/screenshots/4.png" alt="DPad app screenshot 1" width="48%" />
+</p>
+
+---
+
 
 ## License
 
