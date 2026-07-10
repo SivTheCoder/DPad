@@ -13,14 +13,14 @@ button pad that triggers clicks and scroll actions over serial.
 <p>
   <img src="assets/screenshots/1.jpeg" alt="DPad hardware — photo 1" width="32%" />
   <img src="assets/screenshots/2.jpeg" alt="DPad hardware — photo 2" width="32%" />
-  <img src="assets/screenshots/3.jpge" alt="DPad hardware — photo 3" width="32%" />
+  <img src="assets/screenshots/3.jpeg" alt="DPad hardware — photo 3" width="32%" />
 </p>
 
 ### Software
 
 <p>
   <img src="assets/screenshots/4.png" alt="DPad app screenshot 1" width="48%" />
-  <img src="assets/screenshots/6.png" alt="DPad app screenshot 2" width="48%" />
+  <img src="assets/screenshots/5.png" alt="DPad app screenshot 2" width="48%" />
 </p>
 
 ---
