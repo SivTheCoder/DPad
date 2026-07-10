@@ -1,6 +1,4 @@
-<img src="logo.ico" alt="DPad LOGO" width="32%" />
-
-# DPad
+# <img src="logo.png" alt="DPad logo" width="40" height="40" valign="middle" /> DPad
 
 A minimalist, Stream-Deck-style desktop macro controller with a light/dark
 theme picker, built-in test actions, and support for a physical ESP32
@@ -22,7 +20,6 @@ button pad that triggers clicks and scroll actions over serial.
 
 <p>
   <img src="assets/screenshots/4.png" alt="DPad app screenshot 1" width="48%" />
-  <img src="assets/screenshots/5.png" alt="DPad app screenshot 2" width="48%" />
 </p>
 
 ---
