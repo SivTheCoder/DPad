@@ -5,27 +5,27 @@ Built for my dad.
 He records videos regularly, and I kept noticing the same problem: every
 time he needed to start or stop recording, switch scenes, mute the mic,
 trigger a shortcut, or control his teleprompter, he had to stop and reach
-for the keyboard — interrupting his flow every single time.
+for the keyboard - interrupting his flow every single time.
  
-So I put my bigger projects on hold — a Raspberry Pi/ESP32-S3 desktop
-assistant and an F-22 RC aircraft — to build him something much simpler: a
+So I put my bigger projects on hold - a Raspberry Pi/ESP32-S3 desktop
+assistant and an F-22 RC aircraft - to build him something much simpler: a
 custom programmable macro pad. The goal was never to build the most
 advanced piece of hardware. It was to remove friction from something he
 does every day (within a short span of time as he hates me "wasting" time on these lil silly projects for him lmao).
  
 **DPad** is the software and hardware side of that: a desktop app for configuring
 macros across with a physical macro pad customizable and desgined to be used as a foot pedal. Software includes a GUI for assigning shortcuts without touching firmware, and
-automatic detection so the hardware just connects and works — no setup
+automatic detection so the hardware just connects and works - no setup
 ritual required. Also some "dad themed" themes just to get the vibe going :D
  
 Sometimes the most impactful projects aren't the biggest ones. This one
-taught me that paying attention to a small, everyday frustration — and
-just fixing it — can matter more than building something bigger or more
+taught me that paying attention to a small, everyday frustration - and
+just fixing it - can matter more than building something bigger or more
 complex.
 
 ---
 
-## Quick Start — Download and Run (no Python required)
+## Quick Start - Download and Run (no Python required)
 
 1. Go to the repo: https://github.com/SivTheCoder/dpad
 2. Click **`DPad.exe`** in the file list, then click **Download raw file**
@@ -35,7 +35,7 @@ complex.
    - Windows SmartScreen may show **"Windows protected your PC"** the
      first time, since the exe isn't code-signed. Click **More info →
      Run anyway**.
-4. That's it — DPad opens ready to use. No Python, no dependencies.
+4. That's it - DPad opens ready to use. No Python, no dependencies.
 
 > If you just want to use the app (not edit the code), this is the only
 > section you need.
@@ -77,7 +77,7 @@ dpad/
 ├── DPad.exe            # Ready-to-run Windows build
 ├── DPad.spec            # PyInstaller spec (reference)
 ├── main.spec              # PyInstaller spec (used for the current build)
-├── main.py                 # Entry point — starts the app, ESP32 handler, and window
+├── main.py                 # Entry point - starts the app, ESP32 handler, and window
 ├── gui.py                   # UI: Stream-Deck-style panel, theme picker
 ├── actions.py                # Click / scroll-up / scroll-down macro actions
 ├── config.py                  # Load/save config.json
@@ -109,7 +109,7 @@ listens for.
 ### Wiring
 
 Each button is wired between its signal pin and **GND**, using the
-ESP32's internal pull-up resistor (`INPUT_PULLUP`) — so **no external
+ESP32's internal pull-up resistor (`INPUT_PULLUP`) - so **no external
 resistors are needed**. A press pulls the pin from `HIGH` to `LOW`.
 
 | Button       | ESP32 Pin | Other leg  |
@@ -133,7 +133,7 @@ resistors are needed**. A press pulls the pin from `HIGH` to `LOW`.
 ```
 
 If you're using a standard 2-pin tactile push button, it doesn't
-matter which of its two legs goes to the GPIO pin vs. GND — momentary
+matter which of its two legs goes to the GPIO pin vs. GND - momentary
 buttons aren't polarized.
 
 ### Arduino IDE Setup
@@ -149,7 +149,7 @@ buttons aren't polarized.
 4. Select **Tools → Board** → your specific ESP32 board model.
 5. Select **Tools → Port** → the COM port your ESP32 shows up on.
 6. Paste in the sketch below, then click **Upload**.
-7. Once uploaded, close the Arduino Serial Monitor if it's open —
+7. Once uploaded, close the Arduino Serial Monitor if it's open -
    only one program can read the serial port at a time, and DPad
    needs it free to connect.
 
@@ -196,7 +196,7 @@ void loop() {
 to lightly debounce). The `lastX == HIGH && x == LOW` check fires the
 serial message only on the moment a button transitions from unpressed
 to pressed (rising edge is `HIGH`, since the pin idles `HIGH` via the
-pull-up and drops to `LOW` when pressed) — so holding a button down
+pull-up and drops to `LOW` when pressed) - so holding a button down
 doesn't spam repeated messages, one press sends one message.
 
 ### Connecting it in DPad
@@ -215,9 +215,9 @@ matching **Test Actions** button in the app.
 ### Hardware
 
 <p>
-  <img src="assets/screenshots/1.jpeg" alt="DPad hardware — photo 1" width="32%" />
-  <img src="assets/screenshots/2.jpeg" alt="DPad hardware — photo 2" width="32%" />
-  <img src="assets/screenshots/3.jpeg" alt="DPad hardware — photo 3" width="32%" />
+  <img src="assets/screenshots/1.jpeg" alt="DPad hardware - photo 1" width="32%" />
+  <img src="assets/screenshots/2.jpeg" alt="DPad hardware - photo 2" width="32%" />
+  <img src="assets/screenshots/3.jpeg" alt="DPad hardware - photo 3" width="32%" />
 </p>
 
 ### Software
@@ -231,4 +231,4 @@ matching **Test Actions** button in the app.
 
 ## License
 
-MIT — see the license included in the repository.
+MIT - see the license included in the repository.
