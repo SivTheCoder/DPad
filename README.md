@@ -1,3 +1,4 @@
+<img src="logo.ico" alt="DPad LOGO" width="32%" />
 # DPad
 
 A minimalist, Stream-Deck-style desktop macro controller with a light/dark
