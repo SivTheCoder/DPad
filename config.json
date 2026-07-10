@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "active_profile": "default",
+    "profiles": {
+        "default": {
+            "click_position": {
+                "x": 500,
+                "y": 500
+            },
+            "scroll_amount": 400
+        }
+    }
+}
